@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  width: 75px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background: none;
+}
+
+#previous,
+#next {
+  font-size: 25px;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+  width: au;
+}
+
+#header {
+  padding: 10px;
+  color: black;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#container {
+  width: 770px;
+}
+#week {
+  width: 100%;
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+#week div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day + .currentDay {
+  background-color: #8ef098;
+  font-weight: 500;
+  text-decoration: underline;
+  color: white;
+}
+
+.day:hover {
+  background-color: #c9f3d2;
+  text-decoration: underline;
+
+  font-weight: 500;
+}
+
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 75px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #fffcff !important;
+  box-shadow: none !important;
+}
